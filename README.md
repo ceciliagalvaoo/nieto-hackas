@@ -4,6 +4,10 @@
 
 NIETO é um agente de Inteligência Artificial desenvolvido para Android que visa proteger cidadãos, especialmente idosos, contra desinformação e manipulações digitais relacionadas a direitos, leis e políticas públicas. O projeto tem como objetivo central aproximar a população das decisões legislativas, tornando a democracia mais compreensível, acessível e inclusiva.
 
+## Documentação completa
+
+Acesso o arquivo `NIETO_documentacao` na raiz do projeto para visualizar a documentação completa e visual de todo o detalhamento do projeto.
+
 ## O Problema
 
 A população brasileira, principalmente o público idoso e "mobile only", enfrenta barreiras significativas no acesso e compreensão de informações sobre políticas públicas, direitos e decisões legislativas. O uso intensivo de jargões técnicos e "juridiquês", combinado com a proliferação de desinformação política em plataformas digitais, dificulta a participação democrática efetiva desses cidadãos.
@@ -104,6 +108,7 @@ nieto-hackas/
 │   ├── App.js
 │   └── index.js
 ├── package.json
+├── NIETO_documentacao.pdf
 └── README.md
 ```
 
