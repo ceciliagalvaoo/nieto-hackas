@@ -28,10 +28,10 @@ A interface foi desenvolvida com foco em acessibilidade, priorizando usabilidade
 
 ## Membros da Equipe
 
-- Nataly de Sousa Cunha
-- Mariana de Paula
-- Cecília Beatriz Galvão
-- Pablo de Azevedo
+- Nataly de Sousa Cunha | nataly.cunha@sou.inteli.edu.br
+- Mariana de Paula | mariana.souza@sou.inteli.edu.br
+- Cecília Beatriz Galvão | cecilia.galvao@sou.inteli.edu.br
+- Pablo de Azevedo | pablo.azevedo@sou.inteli.edu.br
 
 ## Tecnologias Utilizadas
 
