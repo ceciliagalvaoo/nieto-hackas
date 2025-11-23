@@ -41,11 +41,11 @@ const OnboardingApp = () => {
   ];
 
   const mockNotifications = [
-    { id: 1, type: "sms_blocked", message: "SMS suspeito bloqueado", description: "Uma mensagem com links desconhecidos foi barrada antes de chegar até você.", time: "2 min ago", severity: "low", color: "#5DA09F" },
-    { id: 2, type: "phishing_attempt", message: "Tentativa de phishing no WhatsApp", description: "Uma mensagem falsa de banco tentou te enganar, mas foi bloqueada.", time: "1h ago", severity: "medium", color: "#E6A93E" },
-    { id: 3, type: "high_risk_scam", message: "Golpe de alto risco evitado", description: "Um link fraudulento se passando pela sua operadora foi bloqueado.", time: "3h ago", severity: "high", color: "#E14513" },
-    { id: 4, type: "new_scam_detected", message: "Novo golpe identificado", description: "Vários usuários relataram um golpe semelhante na sua região.", time: "5h ago", severity: "medium", color: "#E6A93E" },
-    { id: 5, type: "all_clear", message: "Tudo limpo hoje!", description: "Nenhuma tentativa de golpe detectada nas últimas 24 horas.", time: "1 day ago", severity: "low", color: "#5DA09F" }
+    { id: 1, type: "sms_blocked", message: "Informação verificada", description: "Uma notícia sobre mudança de lei foi verificada e explicada em linguagem simples.", time: "2 min atrás", severity: "low", color: "#5DA09F" },
+    { id: 2, type: "phishing_attempt", message: "Desinformação política bloqueada", description: "Uma mensagem com informações falsas sobre direitos foi identificada e explicada.", time: "1h atrás", severity: "medium", color: "#E6A93E" },
+    { id: 3, type: "high_risk_scam", message: "Manipulação política evitada", description: "Um conteúdo que manipulava informações sobre políticas públicas foi detectado.", time: "3h atrás", severity: "high", color: "#E14513" },
+    { id: 4, type: "new_scam_detected", message: "Nova desinformação identificada", description: "Vários usuários relataram conteúdo similar com informações distorcidas na sua região.", time: "5h atrás", severity: "medium", color: "#E6A93E" },
+    { id: 5, type: "all_clear", message: "Tudo verificado hoje!", description: "Nenhuma desinformação detectada nas últimas 24 horas. Continue se informando!", time: "1 dia atrás", severity: "low", color: "#5DA09F" }
   ];
 
   const nextScreen = () => {
@@ -119,7 +119,7 @@ const OnboardingApp = () => {
               </h1>
               
               <p className="text-base text-gray-700 leading-relaxed px-4">
-                Estou aqui para proteger você contra golpes digitais. Comigo, usar o celular fica muito mais seguro e tranquilo.
+                Estou aqui para te proteger contra desinformação e te ajudar a entender melhor leis e políticas públicas. Com linguagem simples, vou te aproximar das decisões que afetam sua vida.
               </p>
             </div>
           </div>
@@ -130,7 +130,7 @@ const OnboardingApp = () => {
               className="w-full text-white font-semibold py-4 rounded-full transition-colors duration-200 mb-4"
               style={{ backgroundColor: '#337289' }}
             >
-              Next
+              Próximo
             </button>
             <ProgressDots />
           </div>
@@ -161,7 +161,7 @@ const OnboardingApp = () => {
               </h1>
               
               <p className="text-base text-gray-700 leading-relaxed px-4">
-                Se for um golpe perigoso, eu aviso sua família automaticamente. Assim, você nunca estará sozinho!
+                Se identificar algo perigoso ou importante sobre seus direitos, aviso sua família automaticamente. Assim, você nunca estará sozinho na hora de tomar decisões!
               </p>
             </div>
           </div>
@@ -172,7 +172,7 @@ const OnboardingApp = () => {
               className="w-full text-white font-semibold py-4 rounded-full transition-colors duration-200 mb-4"
               style={{ backgroundColor: '#337289' }}
             >
-              Start
+              Começar
             </button>
             <ProgressDots />
           </div>
@@ -203,7 +203,7 @@ const OnboardingApp = () => {
               </h1>
               
               <p className="text-base text-gray-700 leading-relaxed px-4">
-                Eu leio suas mensagens e notificações. Quando encontro algo suspeito, aviso você com alertas simples e fáceis de entender.
+                Leio suas mensagens e notificações sobre leis, direitos e políticas públicas. Quando encontro algo importante ou confuso, explico em linguagem simples, sem jargões, para que você participe melhor da democracia.
               </p>
             </div>
           </div>
@@ -214,7 +214,7 @@ const OnboardingApp = () => {
               className="w-full text-white font-semibold py-4 rounded-full transition-colors duration-200 mb-4"
               style={{ backgroundColor: '#337289' }}
             >
-              Next
+              Próximo
             </button>
             <ProgressDots />
           </div>
@@ -230,7 +230,7 @@ const OnboardingApp = () => {
         <div className="px-6 py-8 h-screen flex flex-col">
           <div className="text-center mb-6 pt-8">
             <h2 className="text-xl text-teal-700 font-bold mb-2">
-              Who will do the configuration?
+              Quem vai fazer a configuração?
             </h2>
           </div>
 
@@ -246,11 +246,11 @@ const OnboardingApp = () => {
               <div className="w-full h-72 flex items-center justify-center mb-3">
                 <img 
                   src={images.elder_couple_selection} 
-                  alt="Casal de idosos - Elder"
+                  alt="Casal de idosos - Idoso"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-2xl font-bold text-red-500 text-center mb-6">Elder</h3>
+              <h3 className="text-2xl font-bold text-red-500 text-center mb-6">Idoso</h3>
             </div>
 
             <div 
@@ -264,11 +264,11 @@ const OnboardingApp = () => {
               <div className="w-full h-72 flex items-center justify-center mb-1">
                 <img 
                   src={images.responsible_boy} 
-                  alt="Menino responsável"
+                  alt="Responsável"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-2xl font-bold text-teal-600 text-center">Responsible</h3>
+              <h3 className="text-2xl font-bold text-teal-600 text-center">Responsável</h3>
             </div>
           </div>
         </div>
@@ -295,7 +295,7 @@ const OnboardingApp = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold mb-4 text-center" style={{ color: '#C83B29' }}>
-                  What is your name?
+                  Qual é o seu nome?
                 </h2>
                 <input
                   type="text"
@@ -308,7 +308,7 @@ const OnboardingApp = () => {
 
               <div>
                 <h2 className="text-2xl font-bold mb-4 text-center" style={{ color: '#C83B29' }}>
-                  What is your number?
+                  Qual é o seu telefone?
                 </h2>
                 <div className="space-y-3">
                   <select
@@ -342,7 +342,7 @@ const OnboardingApp = () => {
               className="w-full text-white font-semibold py-4 rounded-full transition-colors duration-200"
               style={{ backgroundColor: '#337289' }}
             >
-              Next
+              Próximo
             </button>
           </div>
         </div>
@@ -359,7 +359,7 @@ const OnboardingApp = () => {
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <div className="bg-white rounded-3xl p-6 m-4 w-full max-w-sm max-h-96 overflow-y-auto">
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-xl font-bold">Notifications</h2>
+                <h2 className="text-xl font-bold">Notificações</h2>
                 <button onClick={() => setShowStatusModal(false)} className="text-2xl">×</button>
               </div>
               <div className="space-y-3">
@@ -387,27 +387,27 @@ const OnboardingApp = () => {
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <div className="bg-white rounded-3xl p-6 m-4 w-full max-w-sm">
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-xl font-bold">Add Emergency Contact</h2>
+                <h2 className="text-xl font-bold">Adicionar Contato de Emergência</h2>
                 <button onClick={() => setShowContactModal(false)} className="text-2xl">×</button>
               </div>
               <div className="space-y-4">
                 <input
                   type="text"
-                  placeholder="Name"
+                  placeholder="Nome"
                   value={newContact.name}
                   onChange={(e) => setNewContact({...newContact, name: e.target.value})}
                   className="w-full px-3 py-2 border rounded-full"
                 />
                 <input
                   type="text"
-                  placeholder="Relationship (e.g., Son, Daughter)"
+                  placeholder="Parentesco (ex: Filho, Filha, Neto)"
                   value={newContact.relationship}
                   onChange={(e) => setNewContact({...newContact, relationship: e.target.value})}
                   className="w-full px-3 py-2 border rounded-full"
                 />
                 <input
                   type="text"
-                  placeholder="Phone Number"
+                  placeholder="Número de Telefone"
                   value={newContact.phone}
                   onChange={(e) => setNewContact({...newContact, phone: e.target.value})}
                   className="w-full px-3 py-2 border rounded-full"
@@ -417,7 +417,7 @@ const OnboardingApp = () => {
                   className="w-full py-3 text-white rounded-full font-semibold"
                   style={{ backgroundColor: '#337289' }}
                 >
-                  Add Contact
+                  Adicionar Contato
                 </button>
               </div>
             </div>
@@ -436,7 +436,7 @@ const OnboardingApp = () => {
               </div>
             </div>
             <h1 className="text-3xl font-bold text-white mb-2">
-              You are safe
+              Você está seguro
             </h1>
           </div>
         </div>
@@ -448,11 +448,11 @@ const OnboardingApp = () => {
               className="bg-white rounded-2xl p-4 shadow-sm border cursor-pointer hover:shadow-md transition-shadow"
               onClick={() => setShowStatusModal(true)}
             >
-              <h3 className="text-lg font-bold text-center mb-4 text-gray-600">Notifications</h3>
+              <h3 className="text-lg font-bold text-center mb-4 text-gray-600">Notificações</h3>
               <div className="flex items-center justify-between">
                 <div>
-                  <h4 className="font-semibold text-gray-800">Scam Avoided</h4>
-                  <p className="text-sm text-gray-500">How many times Nieto helped you?</p>
+                  <h4 className="font-semibold text-gray-800">Desinformação Evitada</h4>
+                  <p className="text-sm text-gray-500">Quantas vezes o Nieto te ajudou?</p>
                 </div>
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold" style={{ backgroundColor: '#337289' }}>
                   5
@@ -462,12 +462,12 @@ const OnboardingApp = () => {
 
             {/* Security Section */}
             <div className="space-y-4">
-              <h3 className="text-lg font-bold text-center text-gray-600">Security</h3>
+              <h3 className="text-lg font-bold text-center text-gray-600">Segurança</h3>
               
               <div className="flex items-center justify-between py-3">
                 <div>
-                  <h4 className="font-semibold text-gray-800">SMS Protection</h4>
-                  <p className="text-sm text-gray-500">We will check if the sms is a possible scam</p>
+                  <h4 className="font-semibold text-gray-800">Proteção SMS</h4>
+                  <p className="text-sm text-gray-500">Vamos verificar se o SMS contém desinformação</p>
                 </div>
                 <button
                   onClick={() => setSmsProtection(!smsProtection)}
@@ -482,8 +482,8 @@ const OnboardingApp = () => {
 
               <div className="flex items-center justify-between py-3">
                 <div>
-                  <h4 className="font-semibold text-gray-800">WhatsApp Protection</h4>
-                  <p className="text-sm text-gray-500">We will check your notifications</p>
+                  <h4 className="font-semibold text-gray-800">Proteção WhatsApp</h4>
+                  <p className="text-sm text-gray-500">Vamos verificar suas notificações</p>
                 </div>
                 <button
                   onClick={() => setWhatsappProtection(!whatsappProtection)}
@@ -500,7 +500,7 @@ const OnboardingApp = () => {
             {/* Emergency Contact Section */}
             <div className="space-y-4">
               <div className="flex items-center justify-center space-x-2">
-                <h3 className="text-lg font-bold text-gray-600">Emergency Contact</h3>
+                <h3 className="text-lg font-bold text-gray-600">Contato de Emergência</h3>
                 <button 
                   onClick={() => setShowContactModal(true)}
                   className="w-6 h-6 rounded-full flex items-center justify-center text-white font-bold"
@@ -529,9 +529,9 @@ const OnboardingApp = () => {
 
             {/* Privacy Section */}
             <div className="space-y-2 pb-8">
-              <h3 className="text-lg font-bold text-center text-gray-600">Privacy</h3>
+              <h3 className="text-lg font-bold text-center text-gray-600">Privacidade</h3>
               <p className="text-xs text-gray-600 text-center leading-relaxed">
-                At NIETO, your privacy comes first: all messages are analyzed only on your device and never leave the app.
+                No NIETO, sua privacidade vem primeiro: todas as mensagens são analisadas apenas no seu dispositivo e nunca saem do aplicativo.
               </p>
             </div>
           </div>
